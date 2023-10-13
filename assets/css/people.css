@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&display=swap");
+
 body {
   overflow-x: hidden;
 }
@@ -7,16 +9,35 @@ a {
   color: red;
 }
 
-.heading-section > h1 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 40px;
+.heading-section > h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.heading-section > h2 > span {
+  color: rgb(192, 17, 40);
+}
+
+.heading-section > h4 {
+  margin-bottom: 30px;
 }
 
 .section-2-content h3 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.section-2-content p {
+  margin-top: 60px;
+  font-family: "Noto Sans NKo Unjoined", sans-serif;
+}
+
+.members-content {
+  /* margin-top: 200px; */
+  font-family: "Noto Sans NKo Unjoined", sans-serif;
 }
 
 .individual-brief-left {
@@ -34,7 +55,11 @@ a {
   margin-top: 20px;
 }
 
-
+.team-image-1 > span {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 @media only screen and (max-width: 600px) {
   .logo-1 {
@@ -64,19 +89,18 @@ a {
     flex-direction: column-reverse;
   }
 
-    
-  .section-2-images img:nth-child(1) {
+  .members-content p {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .social-images img {
+    margin-top: 20px;
     width: 100px;
   }
-  .section-2-images img:nth-child(2) {
-    width: 100px;
-    height: 100px;
-    margin-top: 5px;
-  }
-  .section-2-images img:nth-child(3) {
-    width: 160px;
-    height: 100px;
-    margin-top: 10px;
+
+  .section-2-content p {
+    text-align: center;
   }
 }
 
@@ -162,7 +186,6 @@ a {
 
   .section-1 {
     background-color: rgb(255, 255, 255);
-    height: 600px;
   }
 
   .team-image-1 > img {
@@ -179,15 +202,18 @@ a {
     margin-bottom: 30px;
   }
 
-  .section-2-images img:nth-child(1) {
-    width: 130px;
+  .section-1-images {
+    margin-top: 70px;
   }
-  .section-2-images img:nth-child(2) {
+  .section-1-images img:nth-child(1) {
+    width: 160px;
+  }
+  .section-1-images img:nth-child(2) {
     width: 180px;
     height: 100px;
     margin-top: 10px;
   }
-  .section-2-images img:nth-child(3) {
+  .section-1-images img:nth-child(3) {
     width: 160px;
     height: 100px;
     margin-top: 10px;
@@ -227,7 +253,7 @@ a {
 
   .section-1 {
     background-color: rgb(255, 255, 255);
-    height: 600px;
+    height: 680px;
   }
 
   .team-image-1 > img {
@@ -236,6 +262,11 @@ a {
     margin: auto;
     margin-top: 90px;
     border-radius: 30px;
+    transition: 0.3s;
+  }
+
+  .team-image-1 > img:hover {
+    transform: scale(1.1);
   }
 
   .section-2 {
@@ -262,17 +293,27 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .section-2-images img:nth-child(1) {
-    width: 130px;
+
+  .social-images {
+    margin-top: 20px;
   }
-  .section-2-images img:nth-child(2) {
-    width: 180px;
-    height: 100px;
-    margin-top: 10px;
+  .social-images img:nth-child(1) {
+    width: 100px;
+    margin-left: 100px;
   }
-  .section-2-images img:nth-child(3) {
-    width: 160px;
-    height: 100px;
+
+  .social-images img:nth-child(2) {
+    width: 100px;
     margin-top: 10px;
+    
+  }
+  .social-images img:nth-child(3) {
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+
+  .members-content p:nth-child(1) {
+    margin-top: 250px;
   }
 }

@@ -19,21 +19,7 @@
             background-color: rgb(255, 255, 255);
         }
 
-        .logo-1 {
-            width: 135px;
-            height: 70px;
-        }
 
-        .logo-2 {
-            margin-top: 5px;
-            width: 160px;
-            height: 70px;
-        }
-
-        .logo-3 {
-            height: 70px;
-            width: 160px;
-        }
 
         .nav-btn {
             margin-top: 20px;
@@ -45,51 +31,74 @@
         }
 
 
-        .images-section{
+        .images-section {
             background-color: rgb(255, 255, 255);
         }
 
         @media only screen and (min-width: 1200px) {
+            .navbar {
+                height: 120px;
+            }
+
             .logo-1 {
-                width: 230px;
                 height: 100px;
-                margin: unset;
+                padding-left: 120px;
             }
 
             .logo-2 {
-                width: 280px;
+                height: 100px;
+                padding-right: 100px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .navbar-nav {
+                margin-top: 30px;
+            }
+
+            .logo-1 {
                 height: 120px;
-                margin-right: 2rem;
+            }
+
+            .logo-3 {
+                height: 120px;
+            }
+
+            .nav-btn {
+                margin-top: 30px;
             }
         }
 
 
         @media only screen and (max-width: 992px) {
+            .navbar {
+                height: 120px;
+            }
+
+            .navbar-nav {
+                margin-top: 30px;
+            }
+
             .logo-1 {
-                /* width: 15px;
-                height: 120px; */
-                
+                height: 90px;
             }
 
             .logo-2 {
-                width: 280px;
-                height: 120px;
-                margin-right: 2rem;
+                height: 90px;
             }
         }
 
         @media only screen and (max-width: 576px) {
             .logo-1 {
-                width: 100px;
-                height: 50px;
-
+                height: 80px;
             }
 
-            .logo-2 {
-                width: 50px;
-                height: 50px;
+            .logo-3 {
+                height: 80px;
+            }
 
-
+            .nav-btn {
+                margin-top: 30px;
             }
         }
 
